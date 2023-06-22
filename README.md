@@ -2,10 +2,10 @@
 Golang知识训练合集
 
 ## GolangTraining-master （Golang训练-大师）
-### 01_getting-started 
-
+### 01_getting-started  
 <details>
-<summary>fmt</summary>
+<summary>start包</summary>
+主要练习
 
 ##### fmt.Println()
 ##### fmt.Printf()
