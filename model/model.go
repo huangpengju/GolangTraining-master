@@ -2,14 +2,23 @@
 // model 操作其他包
 package model
 
+import (
+	"GolangTraining-master/pkg/package/amain"
+)
+
+// "GolangTraining-master/pkg/package/amain"
+
 // Model 函数用于程序入口的调用
 func Model() {
 	// 1.输出练习
-	start()
+	// start1()
+
+	// 2.包到调用练习
+	amain1()
 }
 
 // start 函数用于练习 fmt.Println 和 fmt.Printf
-func start() {
+func start1() {
 	// 输出hello world!
 	// start.HelloWorld()
 
@@ -27,4 +36,8 @@ func start() {
 
 	// 输出多个 十进制 以及 对应的二进制和十六进制 以及输出该值对应的单引号括起来的go语法字符字面值，必要时会采用安全的转义表示
 	// start.Utf_8()
+}
+
+func amain1() {
+	amain.Amain()
 }
