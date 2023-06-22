@@ -5,6 +5,7 @@ Golang知识训练合集
 >> 01_getting-started 
 >>> fmt.Println()
 >>> fmt.Printf()
+>>> fmt.Println()
 >>>> %d %b %x %X %#x %#X %q   
 
 
