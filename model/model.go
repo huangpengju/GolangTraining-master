@@ -2,11 +2,6 @@
 // model 操作其他包
 package model
 
-import (
-	"GolangTraining-master/pkg/variables"
-	"fmt"
-)
-
 // "GolangTraining-master/pkg/package/amain"
 
 // Model 函数用于程序入口的调用
@@ -18,7 +13,7 @@ func Model() {
 	// amain1()
 
 	// 3.变量的练习
-	variables1()
+	// variables1()
 }
 
 /*
@@ -43,14 +38,13 @@ func start1() {
 	start.Utf_8()
 }
 */
-
 /*
 // 包的练习
 func amain1() {
 	amain.Amain()
 }
 */
-
+/*
 // 变量的练习
 func variables1() {
 	// 输出短变量声明及初始化的内容
@@ -98,3 +92,4 @@ func variables1() {
 	// 反引号像双引号一样工作
 	variables.Exercise()
 }
+*/
