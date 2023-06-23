@@ -2,6 +2,11 @@
 // model 操作其他包
 package model
 
+import (
+	"GolangTraining-master/pkg/scope"
+	"fmt"
+)
+
 // "GolangTraining-master/pkg/package/amain"
 
 // Model 函数用于程序入口的调用
@@ -14,6 +19,10 @@ func Model() {
 
 	// 3.变量的练习
 	// variables1()
+
+	// 4.包和变量的作用范围
+	scope1()
+
 }
 
 /*
@@ -93,3 +102,44 @@ func variables1() {
 	variables.Exercise()
 }
 */
+
+// scop1 练习包的作用范围
+func scope1() {
+	// 变量和函数 在同一包和不同包中的使用
+	scope.ScopeMain()
+
+	fmt.Println("______")
+	// 函数内部的作用域
+	// 函数内部变量的声明，作用域只在该函数内部
+	scope.BlockScopMain()
+
+	fmt.Println("______")
+	// 函数中变量的作用域和{}代码块中的作用域
+	scope.Closure1()
+
+	fmt.Println("______")
+	// 包作用域下，同一变量（全局）可以被多个函数使用
+	scope.Closure2()
+
+	fmt.Println("______")
+
+	// 闭包帮助我们限制多个函数使用的变量的作用域，
+	// 如果没有闭包，两个或多个函数要访问同一个变量，
+	// 该变量需要是包作用域
+	// 匿名函数 没有名称的函数
+	// 函数表达式 将函数赋值给变量
+	scope.Closure3()
+
+	fmt.Println("______")
+	// 匿名函数和作用域内的变量
+	scope.Closure4()
+
+	fmt.Println("______")
+	// 顺序很重要（局部变量）
+	scope.OrderMattersMain()
+
+	fmt.Println("______")
+	// 变量跟踪
+	// VarShadowingMain 变量与函数名一致
+	scope.VarShadowingMain()
+}
