@@ -2,6 +2,11 @@
 // model 操作其他包
 package model
 
+import (
+	"GolangTraining-master/pkg/constants"
+	"fmt"
+)
+
 // "GolangTraining-master/pkg/package/amain"
 
 // Model 函数用于程序入口的调用
@@ -20,6 +25,9 @@ func Model() {
 
 	// 5. 空白标识符的使用
 	// blank1()
+
+	// 6. 常量是一个简单不变的值
+	Constants1()
 
 }
 
@@ -154,3 +162,17 @@ func blank1() {
 	blank.NotChecking()
 }
 */
+
+// 常量是一个简单不变的值
+// iota 是常量计数器
+// 左移运算符（<<）将一个运算对象的各二进制位全部左移若干位（左边的二进制位丢弃，右边的补0）
+func Constants1() {
+	// 声明一个常量，并使用
+	constants.Constant()
+
+	fmt.Println("_______")
+	// 声明一个常量，iota 是常量计数器
+	// iota是go语言的常量计数器,只能在常量表达式中使用 iota在const关键字出现时将被重置为0,const中每新增一行常量声明将使iota计数一次 可理解为const语句块中的行索引。
+	constants.IotaMain()
+
+}
