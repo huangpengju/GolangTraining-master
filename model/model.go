@@ -2,11 +2,6 @@
 // model 操作其他包
 package model
 
-import (
-	"GolangTraining-master/pkg/scope"
-	"fmt"
-)
-
 // "GolangTraining-master/pkg/package/amain"
 
 // Model 函数用于程序入口的调用
@@ -21,7 +16,10 @@ func Model() {
 	// variables1()
 
 	// 4.包和变量的作用范围
-	scope1()
+	// scope1()
+
+	// 5. 空白标识符的使用
+	// blank1()
 
 }
 
@@ -102,7 +100,7 @@ func variables1() {
 	variables.Exercise()
 }
 */
-
+/*
 // scop1 练习包的作用范围
 func scope1() {
 	// 变量和函数 在同一包和不同包中的使用
@@ -143,3 +141,16 @@ func scope1() {
 	// VarShadowingMain 变量与函数名一致
 	scope.VarShadowingMain()
 }
+*/
+/*
+// blank1 包用来测试 _ 占位符(空白标识符)
+func blank1() {
+	// 在函数中如果声明的变量没有使用会报错
+	blank.BlankMain()
+	// 对于不使用的变量可以用_标识
+	// 例子
+	blank.Checking()
+	// 对于例子程序中不需要使用的变量可以用_标识
+	blank.NotChecking()
+}
+*/
