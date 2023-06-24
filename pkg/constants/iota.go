@@ -60,6 +60,7 @@ func IotaMain() {
 	fmt.Println(c3)
 
 	fmt.Println("_______")
+	fmt.Println("binary\t\tdecimal")
 	fmt.Printf("%b\t", KB) // 二进制
 	fmt.Printf("%d\n", KB) // 十进制
 

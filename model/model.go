@@ -2,11 +2,6 @@
 // model 操作其他包
 package model
 
-import (
-	"GolangTraining-master/pkg/constants"
-	"fmt"
-)
-
 // "GolangTraining-master/pkg/package/amain"
 
 // Model 函数用于程序入口的调用
@@ -27,7 +22,7 @@ func Model() {
 	// blank1()
 
 	// 6. 常量是一个简单不变的值
-	Constants1()
+	// Constants1()
 
 }
 
@@ -162,7 +157,7 @@ func blank1() {
 	blank.NotChecking()
 }
 */
-
+/*
 // 常量是一个简单不变的值
 // iota 是常量计数器
 // 左移运算符（<<）将一个运算对象的各二进制位全部左移若干位（左边的二进制位丢弃，右边的补0）
@@ -176,3 +171,4 @@ func Constants1() {
 	constants.IotaMain()
 
 }
+*/
