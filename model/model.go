@@ -2,6 +2,11 @@
 // model 操作其他包
 package model
 
+import (
+	"GolangTraining-master/pkg/address"
+	"fmt"
+)
+
 // "GolangTraining-master/pkg/package/amain"
 
 // Model 函数用于程序入口的调用
@@ -24,6 +29,8 @@ func Model() {
 	// 6. 常量是一个简单不变的值
 	// Constants1()
 
+	// 7. 内存地址
+	address1()
 }
 
 /*
@@ -172,3 +179,12 @@ func Constants1() {
 
 }
 */
+
+func address1() {
+	// showingMain 用来学习获取变量的内存地址，获得的值是十六进制数
+	address.ShowingMain()
+
+	fmt.Println("_______")
+	// 使用变量的内存地址
+	address.UsingMain()
+}
