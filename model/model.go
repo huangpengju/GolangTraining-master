@@ -2,10 +2,7 @@
 // model 操作其他包
 package model
 
-import (
-	"GolangTraining-master/pkg/pointers"
-	"fmt"
-)
+import "GolangTraining-master/pkg/remainder"
 
 // "GolangTraining-master/pkg/package/amain"
 
@@ -33,7 +30,10 @@ func Model() {
 	// address1()
 
 	// 8. 指针
-	pointers1()
+	// pointers1()
+
+	// 9.求余数
+	remainder1()
 }
 
 /*
@@ -193,6 +193,7 @@ func address1() {
 }
 */
 
+/*
 // pointer1 练习指针
 func pointers1() {
 	// 获取变量地址，引用
@@ -209,4 +210,10 @@ func pointers1() {
 	fmt.Println("______")
 	// 使用指针
 	pointers.UsingPointer2()
+}
+*/
+
+func remainder1() {
+	// 求余数
+	remainder.Remainder()
 }

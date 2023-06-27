@@ -132,3 +132,11 @@ KB= 1024
 5. 总结：对指针变量进取取值(*)操作，可以获得指针变量指向的原变量的值。
 6. Go语言指针学习地址：https://blog.csdn.net/weixin_44211968/article/details/121343717
 </details>
+
+### 09_remainder
+<details>
+<summary>remainder包</summary>
+
+#### 取余数 %
+1. 算数运算符 % 用来取余运算
+</details>
