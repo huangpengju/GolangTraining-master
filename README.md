@@ -140,3 +140,33 @@ KB= 1024
 #### 取余数 %
 1. 算数运算符 % 用来取余运算
 </details>
+
+### 10_for-loop
+<details>
+<summary>forloop包</summary>
+
+#### for 循环
+1. for循环可以初始化循环条件i,例如：for i:=0;i<=10;i++{}
+2. for循环可以嵌套
+#### for 循环的 While 用法
+1. for循环可以写成while的方式(带循环条件)，例如：i:=0 for i<10{i++}
+2. for循环可以写成while的方式(不带循环条件，变成死循环)，例如：i:=0 for {i++}
+#### for 循环中使用 break 结束循环
+1. for循环可以写成while的方式(不带循环条件，变成死循环，但使用break可以结束循环)，例如：i:=0 for {if i>=10{break} i++}
+#### for 循环中使用 continue 跳出循环
+1. for循环可以写成while的方式(不带循环条件，变成死循环，但使用break可以结束循环，加上continue可以跳过一次循环，开始下次个循环)，例如：```i := 0
+	for {
+		i++
+		if i%2 == 0 {
+			continue
+		}
+		fmt.Println(i)
+		if i >= 50 {
+			break
+		}
+	}```
+#### for 循环中输出字符（ UTF-8是Go使用的文本编码方案）
+1. "string()" 可以把int类型的参数转换为string类型，并且输出参数（数值）对应的ASCII码，UTF-8是Go使用的文本编码方案。
+2. "[]byte()" 可以把string类型的参数转换为[]uint8类型的切片,比如，" []byte("T") "，输出为：" [84] "，数值84对应的ASCII码是T
+</details>
+

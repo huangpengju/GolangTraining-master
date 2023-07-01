@@ -2,7 +2,10 @@
 // model 操作其他包
 package model
 
-import "GolangTraining-master/pkg/remainder"
+import (
+	"GolangTraining-master/pkg/forloop"
+	"fmt"
+)
 
 // "GolangTraining-master/pkg/package/amain"
 
@@ -32,8 +35,11 @@ func Model() {
 	// 8. 指针
 	// pointers1()
 
-	// 9.求余数
-	remainder1()
+	// 9.求余数 %
+	// remainder1()
+
+	// 10.练习for 循环
+	initCondition1()
 }
 
 /*
@@ -212,8 +218,35 @@ func pointers1() {
 	pointers.UsingPointer2()
 }
 */
-
+/*
+// remainder 用练习%求余数
 func remainder1() {
 	// 求余数
 	remainder.Remainder()
+}
+*/
+
+// initCondition1用来练习for
+func initCondition1() {
+	// 练习for
+	forloop.InitCondition()
+	// 练习for for嵌套循环
+	forloop.Nested()
+	// 练习for带条件的的while用法
+	forloop.ForConditionWhile()
+	// 练习for不带条件的的while用法（死循环）
+	forloop.ForNoConditionWhile()
+	// 练习for不带条件的的while用法（break跳出死循环）
+	forloop.ForBreak()
+
+	fmt.Println("___________")
+	// 练习使用break跳出死循环，同时使用continue跳出某一轮循环，开始下一轮循环
+	forloop.ForContinue()
+
+	fmt.Println("___________")
+	// 输出字符 UTF-8是Go使用的文本编码方案。
+	forloop.RuneLoopUtf81()
+	fmt.Println("___________")
+	// 输出字符 UTF-8是Go使用的文本编码方案。
+	forloop.RuneLoopUtf82()
 }
