@@ -180,5 +180,5 @@ KB= 1024
 2. fallthrough的用法：用于穿透switch，当switch中某个case匹配成功之后,就执行该case语句，如果遇到fallthrough,那么后面紧邻的case无需匹配, 执行穿透执行。fallthrough应该位于某个case的最后一行
 3. case后面同时具有多个条件：```switch 表达式{ case 条件1,条件2:  代码块  case 条件3:  代码块  default  代码块}```
 4. switch后面可以没有表达式：```switch { case 条件1:  代码块  case 条件2,条件3:  代码块  default  代码块}```
-5. switch中允许使用变量的类型：``` switch x.(type){//这是一个断言;断言"x是这种类型"  case int:  代码块  case string:  代码块  case 结构体类型  代码块  default  代码块}```
+5. switch中允许使用变量的类型：```switch x.(type){//这是一个断言;断言"x是这种类型"  case int:  代码块  case string:  代码块  case 结构体类型  代码块  default  代码块}```
 </details>
