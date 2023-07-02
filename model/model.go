@@ -3,8 +3,7 @@
 package model
 
 import (
-	"GolangTraining-master/pkg/forloop"
-	"fmt"
+	"GolangTraining-master/pkg/switchstatements"
 )
 
 // "GolangTraining-master/pkg/package/amain"
@@ -39,7 +38,10 @@ func Model() {
 	// remainder1()
 
 	// 10.练习for 循环
-	initCondition1()
+	// initCondition1()
+
+	// 11.练习switch
+	switch1()
 }
 
 /*
@@ -225,7 +227,7 @@ func remainder1() {
 	remainder.Remainder()
 }
 */
-
+/*
 // initCondition1用来练习for
 func initCondition1() {
 	// 练习for
@@ -249,4 +251,10 @@ func initCondition1() {
 	fmt.Println("___________")
 	// 输出字符 UTF-8是Go使用的文本编码方案。
 	forloop.RuneLoopUtf82()
+}
+*/
+
+// switch 判断
+func switch1() {
+	switchstatements.SwitchMain()
 }
