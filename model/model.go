@@ -4,6 +4,7 @@ package model
 
 import (
 	"GolangTraining-master/pkg/switchstatements"
+	"fmt"
 )
 
 // "GolangTraining-master/pkg/package/amain"
@@ -256,5 +257,19 @@ func initCondition1() {
 
 // switch 判断
 func switch1() {
+	// switch的使用
 	switchstatements.SwitchMain()
+	fmt.Println("_______")
+	// fallthrough 后面的case无条件执行
+	switchstatements.FallthroughTest()
+
+	fmt.Println("________")
+	// 同时练习多个判断条件，满足一个即可
+	switchstatements.MultipleEvals()
+	fmt.Println("______")
+	// 练习switch没有表达式的情况
+	switchstatements.NoExpression()
+	fmt.Println("________")
+	// 用swithc判断变量的类型
+	switchstatements.OnType()
 }
