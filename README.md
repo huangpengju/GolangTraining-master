@@ -171,12 +171,12 @@ KB= 1024
 </details>
 
 
-### 11_switchstatements
+### 01_switchstatements
 <details>
 <summary>switchstatements包</summary>
 
 #### switch 判断
-1. 语法：```switch 表达式{<br>case 条件1:<br>代码块<br>case 条件2:<br>代码块<br>default:<br>代码块<br>}```
+1. 语法：```switch 表达式{ case 条件1:  代码块  case 条件2:  代码块  default  代码块}```
 2. fallthrough的用法：用于穿透switch，当switch中某个case匹配成功之后,就执行该case语句，如果遇到fallthrough,那么后面紧邻的case无需匹配, 执行穿透执行。fallthrough应该位于某个case的最后一行
 3. case后面同时具有多个条件：```switch 表达式{ case 条件1,条件2:  代码块  case 条件3:  代码块  default  代码块}```
 4. switch后面可以没有表达式：```switch { case 条件1:  代码块  case 条件2,条件3:  代码块  default  代码块}```
