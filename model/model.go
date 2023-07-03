@@ -3,7 +3,7 @@
 package model
 
 import (
-	"GolangTraining-master/pkg/switchstatements"
+	"GolangTraining-master/pkg/ifelse"
 	"fmt"
 )
 
@@ -42,7 +42,10 @@ func Model() {
 	// initCondition1()
 
 	// 11.练习switch
-	switch1()
+	// switch1()
+
+	// 12.练习if else
+	ifelse1()
 }
 
 /*
@@ -255,6 +258,7 @@ func initCondition1() {
 }
 */
 
+/*
 // switch 判断
 func switch1() {
 	// switch的使用
@@ -273,3 +277,35 @@ func switch1() {
 	// 用swithc判断变量的类型
 	switchstatements.OnType()
 }
+*/
+
+func ifelse1() {
+	// true 和 false
+	ifelse.Ifelse()
+	fmt.Println("_________")
+
+	// NotExclamation 函数用来练习 !true 和 !false
+	ifelse.NotExclamation()
+
+	fmt.Println("_____")
+	// 初始化语句
+	ifelse.InitStatement()
+	// 初始化语句，变量只能在代码块中使用
+	ifelse.InitStatementErrInvalidCode()
+	fmt.Println("_______")
+
+	// 练习if else 分支语句
+	ifelse.IfElse()
+	fmt.Println("____+++++___")
+	// 练习if else if else
+	ifelse.IfElseIfElse()
+	fmt.Println("_______")
+	// 练习if else if else if else
+	ifelse.IfElseIfElseIfElse()
+
+	fmt.Println("_______")
+	// 能被3整除的数
+	ifelse.DivisibleByThree()
+}
+
+//

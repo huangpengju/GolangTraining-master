@@ -182,3 +182,32 @@ KB= 1024
 4. switch后面可以没有表达式：```switch { case 条件1:  代码块  case 条件2,条件3:  代码块  default  代码块}```
 5. switch中允许使用变量的类型：```switch x.(type){//这是一个断言;断言"x是这种类型"  case int:  代码块  case string:  代码块  case 结构体类型  代码块  default  代码块}```
 </details>
+
+
+### 12_ifelse
+<details>
+<summary>ifelse包</summary>
+
+#### true 为真 | !false 为真
+1. 判断条件为真，就是true
+2. if 条件为真，则执行紧邻if的{}中的代码
+
+#### false 为假 | !true 为假
+1. 判断条件为假，就是false
+2. if 条件为假，则执行else的{}中的代码
+
+#### 表达式中的初始化语句
+1. 语法：``` b := true  if food := "apple"; b {  fmt.Println(food)  }  …… ``` 
+2. 表达式中初始化的变量的作用域：表达式中声明并且初始化的变量food，作用域在 if else 分支语句中
+
+#### 单分支
+1. if
+
+#### 双分支
+1. if | else
+
+#### 多分支
+1. if | else if | else
+2. if | else if | else if | else
+
+</details>
