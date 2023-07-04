@@ -2,11 +2,6 @@
 // model 操作其他包
 package model
 
-import (
-	"GolangTraining-master/pkg/ifelse"
-	"fmt"
-)
-
 // "GolangTraining-master/pkg/package/amain"
 
 // Model 函数用于程序入口的调用
@@ -45,7 +40,10 @@ func Model() {
 	// switch1()
 
 	// 12.练习if else
-	ifelse1()
+	// ifelse1()
+
+	// 13.综合练习
+	// exercisesolutions1()
 }
 
 /*
@@ -278,7 +276,8 @@ func switch1() {
 	switchstatements.OnType()
 }
 */
-
+/*
+// 练习 if else语句
 func ifelse1() {
 	// true 和 false
 	ifelse.Ifelse()
@@ -307,5 +306,34 @@ func ifelse1() {
 	// 能被3整除的数
 	ifelse.DivisibleByThree()
 }
+*/
+/*
+// solutions 用来综合练习
+// 练习了fmt.Println 换行输出
+// 练习了fmt.Print 输出
+// 练习了fmt.Scan 输入
+// 练习了 取余数 %
+// 练习了 if else
+// 练习了 for
+// 练习了 += 累加运算
+func exercisesolutions1() {
+	// 简单的输出
+	// solutions.HelloWorld()
+	// 输出变量的内容
+	// solutions.HelloName()
+	// 先输入，然后输出变量的内容
+	// solutions.HelloUserInput()
+	// 先输入，然后输出变量的内容，并取余数
+	// solutions.UserEntersNumbers()
+	// 求100以内的偶数
+	// solutions.EvenNumbers()
+	// 求1000以内3 5 15的倍数
+	// solutions.FizzBuzz()
 
-//
+	// 求1000以内，3 和 5 的倍数之和
+	// solutions.ThreeFive()
+
+	//
+	solutions.Utf()
+}
+*/

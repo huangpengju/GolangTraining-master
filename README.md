@@ -211,3 +211,34 @@ KB= 1024
 2. if | else if | else if | else
 
 </details>
+
+### 13_exercise_solution
+<details>
+<summary>solution包</summary>
+
+#### fmt.Println
+1. fmt.Println() 返回2个结果,第1个结果表示写入标准输出的字节数,第2个结果表示写入标准输出的错误。
+2. fmt.Println("Hello") 打印参数"Hello"
+3. fmt.Println("Hello"[1]) 打印参数"Hello"的第2个元素e对应的ASCII码 101
+
+#### fmt.Print 输出
+1. 输出参数后，不换行
+
+#### fmt.Scan 输入
+1. 参数："&变量"
+2. 可以通过终端输入，为变量赋值
+
+#### 取余数 %
+1. 例如：4%2 输出 0
+
+####  if else 分支
+1. 条件为真时，if
+2. 条件为假时，else
+
+#### for 
+1. for 循环可以声明循环变量i:=0;加上循环条件i<=100;i++
+
+#### += 累加运算
+1. a:=0  a+=1  //a此时为1
+
+</details>
