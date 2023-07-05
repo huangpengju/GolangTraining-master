@@ -2,6 +2,8 @@
 // model 操作其他包
 package model
 
+import "GolangTraining-master/pkg/function"
+
 // "GolangTraining-master/pkg/package/amain"
 
 // Model 函数用于程序入口的调用
@@ -44,6 +46,9 @@ func Model() {
 
 	// 13.综合练习
 	// exercisesolutions1()
+
+	// 14.函数练习
+	function1()
 }
 
 /*
@@ -337,3 +342,9 @@ func exercisesolutions1() {
 	solutions.Utf()
 }
 */
+
+// function1用来练习函数
+func function1() {
+	// 函数的入口（模拟）
+	function.FuncMain()
+}
