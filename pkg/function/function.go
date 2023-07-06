@@ -38,6 +38,12 @@ func FuncMain() {
 	data1 := []float64{1, 2, 3}
 	n2 := average2(data1)
 	fmt.Println(n2)
+	fmt.Println("___________")
+	greeting()
+	greeting1()
+	greeting2()
+	greeting3()
+	greeting4()
 }
 
 // greet函数的声明包括一个string类型的参数
@@ -118,4 +124,52 @@ func average2(sf []float64) float64 {
 		total += v
 	}
 	return total / float64(len(sf))
+}
+
+// 函数表达式
+// 定义一个普通函数
+func greeting() {
+	fmt.Println("Hello World!")
+}
+
+// 定义一个函数，在函数内部使用匿名函数
+// 匿名函数作为表达式赋值给一个变量
+func greeting1() {
+	greeting := func() {
+		fmt.Println("这里是匿名函数")
+	}
+	greeting()
+}
+
+// 查看匿名函数表达是什么类型
+func greeting2() {
+	greeting := func() {
+		fmt.Println("这里是第二个匿名函数")
+	}
+	greeting()
+	fmt.Printf("greeting的 Type=%T\n", greeting)
+}
+
+// makeGreeter的返回值是匿名函数作
+// 匿名函数的返回值是string类型
+func makeGreeter() func() string {
+	return func() string {
+		return "Hello 这是匿名函数的返回值"
+	}
+}
+
+// greeting3调用另一个函数
+func greeting3() {
+	// 把一个函数作为表达式赋值给变量
+	// 这个函数返回的是一个匿名函数
+	greet := makeGreeter()
+	fmt.Println(greet())
+}
+
+// greeting4调用另一个函数
+func greeting4() {
+	// 定义一个变量
+	greet := makeGreeter()
+	fmt.Println(greet())
+	fmt.Printf("greet的类型：%T\n", greet)
 }
