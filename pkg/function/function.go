@@ -44,6 +44,9 @@ func FuncMain() {
 	greeting2()
 	greeting3()
 	greeting4()
+	fmt.Println("________")
+	Closure()
+	Increment()
 }
 
 // greet函数的声明包括一个string类型的参数
@@ -172,4 +175,84 @@ func greeting4() {
 	greet := makeGreeter()
 	fmt.Println(greet())
 	fmt.Printf("greet的类型：%T\n", greet)
+}
+
+// Closure 用来练习作用域{}
+func Closure() {
+	x := 43
+	fmt.Println(x)
+	{
+		fmt.Println(x)
+		y := "这里是y"
+		fmt.Println(y)
+	}
+	// fmt.Println(y) // 在y的范围之外
+}
+
+var x int
+
+func increment() int {
+	x++
+	return x
+}
+func a() int {
+	x++
+	return x
+}
+
+/*
+闭包帮助我们限制
+没有闭包的多个函数使用的变量的作用域，
+对于两个或多个函数访问同一个变量，
+该变量需要是包作用域
+*/
+
+func Increment() {
+	fmt.Println("x是全局变量")
+	fmt.Println(increment())
+	fmt.Println(increment())
+	fmt.Println(a())
+	fmt.Println("_____")
+	a := 0
+	b := func() int {
+		a++
+		return a
+	}
+	fmt.Println(b())
+	fmt.Println(b())
+	/*
+			匿名函数
+		没有名称的函数
+
+		函数表达式
+		将函数赋值给变量
+	*/
+	fmt.Println("__________")
+	c := wrapper()
+	fmt.Println(c())
+	fmt.Println(c())
+	fmt.Println("_______")
+	a1 := wrapper1()
+	b1 := wrapper1()
+	fmt.Println("a1", a1())
+	fmt.Println("a1", a1())
+	fmt.Println("b1", b1())
+	fmt.Println("b1", b1())
+	fmt.Println("b1", b1())
+}
+
+func wrapper() func() int {
+	var xx int
+	return func() int {
+		xx++
+		return xx
+	}
+}
+
+func wrapper1() func() int {
+	var xxx int
+	return func() int {
+		xxx++
+		return xxx
+	}
 }
